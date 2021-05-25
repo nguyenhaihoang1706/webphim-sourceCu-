@@ -1,0 +1,17 @@
+@import "helper/variable";
+
+//Thư mục Base
+@import "Base/reset";
+
+//Thư mục mixin
+@import "helper/mixin";
+
+//Thư mục layout
+@import "Layout/header";
+@import "layout/carousel";
+@import "layout/homeTool";
+@import "layout/filmBlock";
+@import "layout/cinemaBlock";
+
+//Thư mục Componant
+@import "Componant/button";

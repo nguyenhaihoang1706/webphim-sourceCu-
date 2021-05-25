@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Slick-->
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <header id="myNavBar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">
+            <img src="./image/web-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <div class="collapse navbar-collapse middle" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Cụm rạp</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Tin Tức</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Ứng dụng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="right">
+            <div class="account">
+              <a class="menu" href="">
+                <img src="./image/avatar.png" alt="">
+                <span>Đăng nhập</span>
+              </a>
+            </div>
+            <div class="selectLocation dropdown open">
+                    <img src="./image/tải xuống.png" alt="">
+                    <span class="dropdown-toggle selectMenu white ng-binding" data-toggle="dropdown" aria-expanded="false">Hồ Chí Minh</span>
+                    <ul class="dropdown-menu selectScroll">
+                      <!-- ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hồ Chí Minh" data-locid="0" class="ng-binding">Hồ Chí Minh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Nội" data-locid="1" class="ng-binding">Hà Nội</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đà Nẵng" data-locid="2" class="ng-binding">Đà Nẵng</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hải Phòng" data-locid="3" class="ng-binding">Hải Phòng</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Biên Hoà" data-locid="4" class="ng-binding">Biên Hoà</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Nha Trang" data-locid="5" class="ng-binding">Nha Trang</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bình Dương" data-locid="6" class="ng-binding">Bình Dương</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Phan Thiết" data-locid="7" class="ng-binding">Phan Thiết</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hạ Long" data-locid="8" class="ng-binding">Hạ Long</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Cần Thơ" data-locid="9" class="ng-binding">Cần Thơ</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vũng Tàu" data-locid="10" class="ng-binding">Vũng Tàu</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quy Nhơn" data-locid="11" class="ng-binding">Quy Nhơn</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Huế" data-locid="12" class="ng-binding">Huế</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Long Xuyên" data-locid="13" class="ng-binding">Long Xuyên</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thái Nguyên" data-locid="14" class="ng-binding">Thái Nguyên</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Buôn Ma Thuột" data-locid="15" class="ng-binding">Buôn Ma Thuột</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bắc Giang" data-locid="16" class="ng-binding">Bắc Giang</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bến Tre" data-locid="17" class="ng-binding">Bến Tre</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Việt Trì" data-locid="18" class="ng-binding">Việt Trì</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Ninh Bình" data-locid="19" class="ng-binding">Ninh Bình</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thái Bình" data-locid="20" class="ng-binding">Thái Bình</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vinh" data-locid="21" class="ng-binding">Vinh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bảo Lộc" data-locid="22" class="ng-binding">Bảo Lộc</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đà Lạt" data-locid="23" class="ng-binding">Đà Lạt</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Trà Vinh" data-locid="24" class="ng-binding">Trà Vinh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Yên Bái" data-locid="25" class="ng-binding">Yên Bái</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Kiên Giang" data-locid="26" class="ng-binding">Kiên Giang</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Vĩnh Long" data-locid="27" class="ng-binding">Vĩnh Long</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Cà Mau" data-locid="28" class="ng-binding">Cà Mau</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hậu Giang" data-locid="29" class="ng-binding">Hậu Giang</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Tây Ninh" data-locid="30" class="ng-binding">Tây Ninh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Tuyên Quang" data-locid="31" class="ng-binding">Tuyên Quang</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Thanh Hóa" data-locid="32" class="ng-binding">Thanh Hóa</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Nam Định" data-locid="33" class="ng-binding">Nam Định</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hải Dương" data-locid="34" class="ng-binding">Hải Dương</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Gia Lai" data-locid="35" class="ng-binding">Gia Lai</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Tĩnh" data-locid="36" class="ng-binding">Hà Tĩnh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Phú Yên" data-locid="37" class="ng-binding">Phú Yên</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bạc Liêu" data-locid="38" class="ng-binding">Bạc Liêu</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Long An" data-locid="39" class="ng-binding">Long An</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đồng Hới" data-locid="40" class="ng-binding">Đồng Hới</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hà Nam" data-locid="41" class="ng-binding">Hà Nam</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Bắc Ninh" data-locid="42" class="ng-binding">Bắc Ninh</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quảng Trị" data-locid="43" class="ng-binding">Quảng Trị</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Kon Tum" data-locid="44" class="ng-binding">Kon Tum</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Sóc Trăng" data-locid="45" class="ng-binding">Sóc Trăng</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Sơn La" data-locid="46" class="ng-binding">Sơn La</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Lạng Sơn" data-locid="47" class="ng-binding">Lạng Sơn</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Quảng Ngãi" data-locid="48" class="ng-binding">Quảng Ngãi</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Mỹ Tho" data-locid="49" class="ng-binding">Mỹ Tho</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Đồng Tháp" data-locid="50" class="ng-binding">Đồng Tháp</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations --><li ng-repeat="(locId, location) in listLocations" class="ng-scope">
+                        <a ng-click="selectLocation(locId)" data-name="Hưng Yên" data-locid="51" class="ng-binding">Hưng Yên</a>
+                      </li><!-- end ngRepeat: (locId, location) in listLocations -->
+                    </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!--Carousel-->
+      <section id="myCarousel">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a class="carousel-img" href="">
+                <img class="d-block w-100" src="./image/can-phong-ma-am.jpg" alt="First slide">
+              </a>
+              <div class="carousel-cation">
+                <button class="btn-play" href="">
+                  <img src="./image/play-video.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a class="carousel-img" href="">
+                <img class="d-block w-100" src="./image/di-nguyen-bi-an.png" alt="Second slide">
+              </a>
+              <div class="carousel-cation">
+                <button class="btn-play" href="">
+                  <img src="./image/play-video.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img class="d-block w-100" src="./image/lua-deu-gap-lua-dao.jpg" alt="Third slide">
+              </a>
+              <div class="carousel-cation">
+                <button class="btn-play">
+                  <img src="./image/play-video.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img class="d-block w-100" src="./image/tho-san-quai-vat.jpg" alt="four slide">
+              </a>
+              <div class="carousel-cation">
+                <button class="btn-play" href="">
+                  <img src="./image/play-video.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+         
+        </div>
+        
+      </section>
+
+      <!--Home Tool-->
+      <div id="homeTool" class="container hideOnMoblie">
+        <div class="selectMovie widthByPercent smallBlock">
+          <div class="dropdown-toggle selectItem">Phim</div>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="">Chị Mười Ba: 3 Ngày Sinh Tử (C18)</a>
+            </li>
+            <li>
+              <a href="">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</a>
+            </li>
+            <li>
+              <a href="">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="selectCinema widthByPercent smallBlock">
+          <div class="dropdown-toggle selectItem">Rạp</div>
+        </div>
+        <div class="selectDate widthByPercent smallBlock">
+          <div class="dropdown-toggle selectItem">Ngày Xem</div>
+        </div>
+        <div class="selectSession widthByPercent smallBlock">
+          <div class="dropdown-toggle selectItem">Suất Chiếu</div>
+        </div>
+        <div  class="selectButton widthByPercent">
+          <button class="muaVeNow" id="btnMuaVe">Mua Vé Ngay</button>
+        </div>
+      </div>
+
+      <!--Film Blocks-->
+      <section class="filmBlock container">
+       <div class="col-xs-12">
+        <ul class="nav nav-pills navCenter mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Đang Chiếu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sắp Chiếu</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="film-content container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="film">
+                      <div class="filmThumbnail">
+                        <a class="img_1" href="">
+                          <img class="img_1" src="./image/tom-jerry-16127706651597_215x318.png" alt="">
+                        </a>
+                        <div class="filmHover"></div>
+                        <button class="btn-play">
+                          <img src="./image/play-video.png" alt="">
+                        </button>
+                      </div>
+                    <div class="film-info">
+                     <div class="nameFilm hideHover">
+                        <span class="ageType">P</span>
+                       Tom & Jerry
+                      </div>
+                     <div class="timeFilm hideHover">100 phút </div>
+                     <div class="showHover">
+                       <button class="btnMuaVePhim">Mua Vé</button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+          
+        </div>
+       </div>
+      </section>
+
+      <!--CinemaComplex Block-->
+      <section class="row" id="cinemaBlock">
+        <div id="homeCinemaComplex" class="col-xs-12 mainMaxWidth">
+          <ul class="nav nav-tabs listPCinemas" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="bhd-tab" data-toggle="tab" href="#bhd" role="tab" aria-controls="home" aria-selected="true">
+                <img src="./image/BHDcinema.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="123phim-tab" data-toggle="tab" href="#123phim" role="tab" aria-controls="profile" aria-selected="false">
+                <img src="./image/123phim.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="messages-tab" data-toggle="tab" href="#dongda" role="tab" aria-controls="messages" aria-selected="false">
+                <img src="./image/dongdacinema.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#mega" role="tab" aria-controls="settings" aria-selected="false">
+                <img src="./image/megacinema.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#dc" role="tab" aria-controls="settings" aria-selected="false">
+                <img src="./image/dcinema.jpg" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#lotte" role="tab" aria-controls="settings" aria-selected="false">
+                <img src="./image/lottecinema.png" alt="">
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Tab panes -->
+          <div id="listCinemas" class="tab-content float-left">
+            <div class="tab-pane active" id="bhd" role="tabpanel" aria-labelledby="bhd-tab">
+              <div class="cinema active">
+                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">BHD Star</span>
+                  -Bitexco
+                </span>
+                <span class="adressCinema">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+              <div class="cinema">
+                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-vincom-thao-dien-16105955634183.png" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">BHD Star</span>
+                  -Vincom Thảo Điền
+                </span>
+                <span class="adressCinema">L5-Megamall, 159 XL Hà Nội, Q.2</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+              <div class="cinema">
+                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-vincom-3-2-16105957596860.png" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">BHD Star</span>
+                  -Vincom 3/2
+                </span>
+                <span class="adressCinema">L5-Vincom 3/2, 3C Đường 3/2, Q.10</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+              <div class="cinema">
+                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-pham-hung-16105959230642.png" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">BHD Star</span>
+                  -Phạm Hùng
+                </span>
+                <span class="adressCinema">L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+              <div class="cinema">
+                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-pham-hung-16105959230642.png" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">BHD Star</span>
+                  -Quang Trung
+                </span>
+                <span class="adressCinema">B1-Vincom QT, 190 Quang Trung, Gò Vấp</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="123phim" role="tabpanel" aria-labelledby="123phim-tab">
+              <div class="cinema">
+                <img src="https://s3img.vcdn.vn/123phim/2018/10/cinestar-hai-ba-trung-15383833704033.jpg" alt="">
+              <div class="wrapInfo">
+                <span class="cinema-info">
+                  <span class="colorCinema BHD">CNS </span>
+                  - Hai Bà Trưng
+                </span>
+                <span class="adressCinema">135 Hai Bà Trưng, Bến Nghé, Q.1</span>
+                <span class="redDetail">
+                    <a href="">
+                      [chi tiết]
+                    </a>
+                </span>
+              </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="dongda" role="tabpanel" aria-labelledby="messages-tab">...</div>
+            <div class="tab-pane" id="mega" role="tabpanel" aria-labelledby="settings-tab">...</div>
+            <div class="tab-pane" id="dc" role="tabpanel" aria-labelledby="settings-tab">...</div>
+            <div class="tab-pane" id="lotte" role="tabpanel" aria-labelledby="settings-tab">...</div>
+          </div>
+        </div>
+      </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+          $('.my-slick').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+    </script>
+    <script>
+      $(function () {
+        $('#myTab li:last-child a').tab('show')
+      })
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,68 @@
+#myNavBar{
+    height: 40px;
+    background-color: $color-white-1;
+    .navbar-brand{
+        img{
+            width: 50px;
+        }
+    }
+    .middle{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: black;
+                    
+                }
+               .nav-link:hover{
+                    color: $color-red-0;
+                    transition: all .5s;
+               }
+            }
+        }
+    }
+    .right{
+        .account{
+            position: absolute;
+            left:160px;
+            border-right: 1px solid $color-gray-1;
+            padding-right: 10px;
+            top: -3px;
+            .menu{
+                @include text($color-gray-3, $fs-0, $fw-normal);
+                img{
+                    height:30px;
+                    border-radius: 25px;
+                }
+            }
+            .menu:hover{
+                text-decoration: none;
+            }
+        }
+        .open{
+            float: right;
+            img{
+                height: 20px;
+                margin-right: 4px;
+            }
+            span{
+                color:$color-gray-3;
+            }
+            .selectScroll{
+                top:210%!important;
+                max-height: 300px;
+                overflow-y: scroll;
+                border: none;
+                .ng-binding:hover{
+                    background-color: $color-blue;
+                    color: $color-white-0;
+                    transition: all .5s;
+                    border: none;
+                }
+                .ng-binding{  
+                    display: block;
+                    padding: 3px 20px;
+                }
+            }
+        }
+    }
+}

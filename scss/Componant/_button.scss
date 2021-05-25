@@ -1,0 +1,32 @@
+#btnMuaVe{
+    background-color: $color-gray-4;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-play{
+    background: 0 0;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.btnMuaVePhim{
+    position: absolute;
+    background: linear-gradient(to left,#fb4226,#ce3017 100%);  
+    color: $color-white-0;
+    border-radius: 4px;
+    font-size: 18px!important;
+    text-align: center;
+    padding: 2px;
+    border: none;
+    width: 214px;
+    height: 30px;
+    top: 0;
+    left: 0;
+}

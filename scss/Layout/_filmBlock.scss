@@ -1,0 +1,70 @@
+.filmBlock{
+    padding-top: 75px;
+    .nav{
+        text-align: center;
+        display: block;
+        .nav-item{
+            display: inline-block;
+            .nav-link{
+                text-decoration: none;
+                background-color: white;
+                @include text ($color-black-0, $fs-2, $fw-bold);
+            }
+        }
+        .nav-link.active {
+            font-size: $fs-3;
+            color: $color-red-0;
+        }
+        .nav-link:hover{
+            font-size: $fs-3;
+            transition: all .5s;
+        }
+    }
+    .tab-content{
+            .filmThumbnail{
+                position: relative;
+                img{
+                    padding-bottom: 10px;
+                }
+                .img_1:hover{
+                    background: linear-gradient(to top,#000,transparent 100%);
+                }
+                .btn-play{
+                    z-index: 3;
+                }
+            }
+            .film-info{
+                position: relative;
+                .filmHover{
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all .2s;
+                }
+                .showHover{
+                    // visibility: hidden;
+                    opacity: 1;
+                    transition: all .2s;
+                }
+                .nameFilm{
+                    font-size: 20px;
+                }
+                .ageType{
+                    font-size: 14px;
+                    background-color: #fb4226;
+                    border-radius: 4px;
+                    padding: 0 5px;
+                    color: #fff;
+                    min-width: 33px;
+                    text-align: center;
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+                .timeFilm{
+                    font-size: 15px;
+                    color: #4a4a4a;
+                    margin-bottom: 15px;
+                    margin-top: 8px;
+                }
+            }
+        }
+}
